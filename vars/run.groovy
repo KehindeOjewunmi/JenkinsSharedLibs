@@ -12,7 +12,7 @@ def call(String stageName){
      {
        sh "mvn clean deploy"
      }
-     else if ("${stageName}" == "Approval")
+  else if ("${stageName}" == "Approval")
      {
        sh "echo This stage requires manual approval to proceed"
         timeout(time:2, unit:'DAYS'){
