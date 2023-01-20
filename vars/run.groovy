@@ -18,6 +18,7 @@ def call(String stageName){
         timeout(time:2, unit:'DAYS'){
         input message: 'Approval for Prod Env'
      }
+     }
   else if ("${stageName}" == "SlackAlert")
      {
        sh "echo This stage provides pipeline status on slack channel"
