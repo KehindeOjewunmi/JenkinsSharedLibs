@@ -27,6 +27,6 @@ def call(String stageName){
   else if ("${stageName}" == "EmailAlert")
      {
        sh "echo This stage provides pipeline status by email"
-        emailext body: 'Build Success', subject: 'Build Status', to: 'kaydevopslearning@gmail.com'
+        emailext body: 'Build Successful', subject: 'Build Status', to: 'kaydevopslearning@gmail.com'
      }
 }
